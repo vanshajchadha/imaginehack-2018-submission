@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:VisualSearchApp"
+             x:Class="VisualSearchApp.OcrSelectPage"
+             NavigationPage.HasNavigationBar="False" 
+             NavigationPage.HasBackButton="True" 
+             NavigationPage.BackButtonTitle="Photo">
+    <ContentPage Title=" ">
+        <StackLayout Margin="20,30,30,20">
+                    <Label Text="Scan Name Card" 
+                TextColor="#7fb0ff"
+                FontSize="40" 
+                Margin="0,0,0,20"/>
+            <Button x:Name="ButtonTakePrinted" 
+                    Text="Take Photo" 
+                    TextColor="White" 
+                    BackgroundColor="#7fb0ff" 
+                    Clicked="TakePhotoButtonClickEventHandler" />
+            <Button x:Name="ButtonImportPrinted" 
+                    Text="Import Photo" 
+                    TextColor="White" 
+                    BackgroundColor="#7fb0ff" 
+                    Clicked="ImportPhotoButtonClickEventHandler"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title=" ">
+        <StackLayout Margin="20,30,30,20">
+            <Label Text="Scan Handwriiten Text" 
+                TextColor="#7fb0ff"
+                FontSize="40" 
+                Margin="0,0,0,20"/>
+            <Button x:Name="ButtonTakeHandwritten" 
+                    Text="Take Photo" 
+                    TextColor="White" 
+                    BackgroundColor="#7fb0ff" 
+                    Clicked="TakePhotoButtonClickEventHandler"/>
+            <Button x:Name="ButtonImportHandwritten" 
+                    Text="Import Photo" 
+                    TextColor="White" 
+                    BackgroundColor="#7fb0ff" 
+                    Clicked="ImportPhotoButtonClickEventHandler"/>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

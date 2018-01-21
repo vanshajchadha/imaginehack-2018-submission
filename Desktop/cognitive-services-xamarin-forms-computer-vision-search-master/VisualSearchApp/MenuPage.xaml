@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="VisualSearchApp.MenuPage" 
+BackgroundColor="White">
+
+        <StackLayout Margin="20,30,30,20">
+            <Label Text="Menu" 
+                TextColor="#7fb0ff"
+                FontSize="40" 
+                Margin="0,0,0,20"/>
+            
+           <!-- <Image Source="VisualSearchApp/network.jpg"  />-->
+
+            <Button x:Name="Go_to_camera_options" 
+                    Text="Scan Card" 
+                    TextColor="White" 
+                    BackgroundColor="#7fb0ff"
+                    Clicked="NavigateButton1_OnClicked"/>
+            
+
+
+            <Button x:Name="Go_to_NFC" 
+                    Text="Detect E-Card" 
+                    TextColor="White" 
+                    BackgroundColor="#7fb0ff" 
+                    Clicked="NavigateButton2_OnClicked"/>
+
+            
+        </StackLayout>
+
+
+
+        
+    
+</ContentPage>

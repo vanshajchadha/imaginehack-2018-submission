@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="VisualSearchApp.LoginPage">
+	<ContentPage.Content>
+        <ScrollView Orientation = "Vertical" VerticalOptions="StartAndExpand">
+            <StackLayout Margin="20,30,30,20">
+
+            <Label Text="Log In" 
+                TextColor="#7fb0ff"
+                FontSize="40" 
+                Margin="0,0,0,20"/>
+
+        <Entry Placeholder="User name"
+               IsPassword="False"
+               x:Name="username"
+               Margin="0, 40, 0, 0"/>
+            
+        <Entry Placeholder="Password"
+               IsPassword="False"
+               x:Name="password"/>
+            
+        <Button Text="Log In"
+                Clicked="TryToLogin"
+                Margin="0, 40, 0, 0"/>
+            </StackLayout>
+            </ScrollView>
+	</ContentPage.Content>
+</ContentPage>
+
+
+
